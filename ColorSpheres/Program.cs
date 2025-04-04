@@ -10,21 +10,29 @@ namespace ColorSpheres
             private byte green;
             private byte blue;
             
-            public byte Red
+            public byte red
             {
                 get { return red; }
                 set { red = value; }
             }
-            public byte Green
+            public byte green
             {
                 get { return green; }
                 set { green = value; }
             }
-            public byte Blue 
+            public byte blue 
             {
                 get { return blue; }
                 set { blue = value; }
             }
+
+            public Color(byte red, byte green, byte blue)
+            {
+                this.red = red;
+                this.green = green;
+                this.blue = blue;
+            }
         }
     }
 }
+
