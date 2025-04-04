@@ -39,6 +39,13 @@ namespace ColorSpheres
             private Color color;
             private int radius;
             private int throwTimes;
+
+            public ColorSpheres(Color color, int radius)
+            {
+                this.color = color;
+                this.radius = radius;
+                this.throwTimes = 0;
+            }
         }
     }
 }
