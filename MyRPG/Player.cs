@@ -13,12 +13,8 @@ namespace MyRPG
         public class Name
         {
             public string name { get; }
-
-            public Name(string name)
-            {
-                this.name = name;
-            }
         }
+
         public int XP
         {
             get
@@ -32,15 +28,15 @@ namespace MyRPG
                     return xp; 
             }
         }
-        public class Level
-        {
-            private readonly string level;
 
-            public Level(int level)
-            {
-                this.level = 1 + XP / 1000;
-            }
+        class Level
+        {
+            private int levels
+
+            public int level =>
+                levels + XP / 1000
         } 
+
         public int Health
         {
             get
@@ -56,5 +52,6 @@ namespace MyRPG
                     health = value; 
             }
         }
+
     }
 }
