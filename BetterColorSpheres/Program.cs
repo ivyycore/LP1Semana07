@@ -88,7 +88,6 @@
             sphere1.Throw();
 
             sphere2.Pop();
-
             sphere2.Throw();
 
             Console.WriteLine("Esfera 1:");
