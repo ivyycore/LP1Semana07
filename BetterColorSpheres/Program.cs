@@ -1,4 +1,6 @@
-﻿namespace BetterColorSpheres
+﻿using System;
+
+namespace BetterColorSpheres
 {
     public class Program
     {
