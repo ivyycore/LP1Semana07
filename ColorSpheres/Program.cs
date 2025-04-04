@@ -46,6 +46,16 @@ namespace ColorSpheres
                 this.radius = radius;
                 this.throwTimes = 0;
             }
+
+            public Color GetColor()
+            {
+                return color;
+            }
+
+            public int GetRadius()
+            {
+                return radius;
+            }
         }
     }
 }
