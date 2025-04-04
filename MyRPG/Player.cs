@@ -58,6 +58,16 @@ namespace MyRPG
 
             public int maxhealth =>
                 100 + (Level - 1) * 20
-        } 
+        }
+        public void TakeDamage(float damage)
+        {
+            return Health -= float damage
+            return XP += int damage 
+        }
+        public class Start
+        {
+            public int xp { get; set; } = 0;
+            public Health = MaxHealth
+        }
     }
 }
