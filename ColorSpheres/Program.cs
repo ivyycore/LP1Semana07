@@ -34,13 +34,13 @@ namespace ColorSpheres
             }
         }
 
-        private class ColorSpheres
+        private class Sphere
         {
             private Color color;
             private int radius;
             private int throwTimes;
 
-            public ColorSpheres(Color color, int radius)
+            public Sphere(Color color, int radius)
             {
                 this.color = color;
                 this.radius = radius;
@@ -74,6 +74,14 @@ namespace ColorSpheres
             {
                 return throwTimes
             }
+        }
+        public static void Main()
+        {
+            Color redColor = new Color(255, 0, 0);
+            Color blueColor = new Color(0, 0, 255);
+            Color greenColor = new Color(0, 255, 0);
+
+            Sphere
         }
     }
 }
