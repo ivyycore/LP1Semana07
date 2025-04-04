@@ -56,6 +56,11 @@ namespace ColorSpheres
             {
                 return radius;
             }
+
+            public void Pop()
+            {
+                radius = 0;
+            }
         }
     }
 }
