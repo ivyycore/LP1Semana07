@@ -15,6 +15,14 @@ namespace ColorSpheres
                 get { return red; }
                 set { red = value; }
             }
+
+            public byte Green
+            {
+                get { return green; }
+                set { green = value; }
+                
+            }
+        
         }
     }
 }
