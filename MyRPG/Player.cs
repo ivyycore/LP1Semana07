@@ -32,7 +32,8 @@ namespace MyRPG
                     return xp; 
             }
         }
-        private readonly string name;
+        public class Level
+        private readonly string level;
 
         public Level(int level)
         {
