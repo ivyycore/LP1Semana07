@@ -10,7 +10,7 @@ namespace MyRPG
         public int xp { get; }
         public float health { get; }
 
-        public class Nam
+        public class Name
         {
             private readonly string name;
 
