@@ -72,7 +72,7 @@ namespace ColorSpheres
 
             public int GetTimesThrown()
             {
-                return throwTimes
+                return throwTimes;
             }
         }
         public static void Main()
@@ -82,7 +82,7 @@ namespace ColorSpheres
             Color greenColor = new Color(0, 255, 0);
 
             Sphere sphere1 = new Sphere(redColor, 10);
-            Sphere sphere2 = new Sphere(blueColor, 15)
+            Sphere sphere2 = new Sphere(blueColor, 15);
             Sphere sphere3 = new Sphere(greenColor, 12);
             
             sphere1.Throw();
@@ -92,7 +92,7 @@ namespace ColorSpheres
             sphere2.Pop();
 
             sphere2.Throw();
-            
+
             Console.WriteLine("Esfera 1:");
             Console.WriteLine($"Cor: ({sphere1.GetColor().Red}, {sphere1.GetColor().Green}, {sphere1.GetColor().Blue})");
             Console.WriteLine($"Raio: {sphere1.GetRadius()}");
