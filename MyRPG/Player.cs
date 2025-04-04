@@ -52,6 +52,12 @@ namespace MyRPG
                     health = value; 
             }
         }
+        class MaxHealth
+        {
+            private float max
 
+            public int maxhealth =>
+                100 + (Level - 1) * 20
+        } 
     }
 }
