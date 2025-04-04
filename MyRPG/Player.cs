@@ -39,5 +39,20 @@ namespace MyRPG
         {
             this.level = 1 + XP / 1000;
         }
+        public int Health
+        {
+            get
+            {
+                return health;
+            }
+            set
+            {
+                health = value;
+                if (health < 0)
+                    health = value;
+                if (health > MaxHealth)
+                    health = value; 
+            }
+        }
     }
 }
