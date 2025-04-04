@@ -33,6 +33,13 @@ namespace ColorSpheres
                 this.blue = blue;
             }
         }
+
+        private class ColorSpheres
+        {
+            private Color color;
+            private int radius;
+            private int throwTimes;
+        }
     }
 }
 
