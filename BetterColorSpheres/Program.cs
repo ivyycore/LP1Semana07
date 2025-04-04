@@ -52,20 +52,26 @@
         }
         public static void Main()
         {
-            Color redColor = new Color(255, 0, 0);
-            Color blueColor = new Color(0, 0, 255);
-            Color greenColor = new Color(0, 255, 0);
-
-            Sphere sphere1 = new Sphere(redColor, 10);
-            Sphere sphere2 = new Sphere(blueColor, 15);
-            Sphere sphere3 = new Sphere(greenColor, 12);
+            const byte MaxRed = 255, MaxGreen = 255, MaxBlue = 255;
+            const byte NoColor = 0;
             
+            //red (255,0,0) green (0,255,0) blue (0,0,255)
+            Color redColor = new Color(MaxRed, NoColor, NoColor);
+            Color greenColor = new Color(NoColor, MaxGreen, NoColor);
+            Color blueColor = new Color(NoColor, NoColor, MaxBlue);
+            
+            //esferas (cor, raio)
+            Sphere sphere1 = new Sphere(redColor, 10);
+            Sphere sphere3 = new Sphere(greenColor, 12);
+            Sphere sphere2 = new Sphere(blueColor, 15);
+            //throw da primeira 3 vezes
             sphere1.Throw();
             sphere1.Throw();
             sphere1.Throw();
-
+            //pop da segunda
             sphere2.Pop();
-            sphere2.Throw();
+            //throw da terceira 1 vez
+            sphere3.Throw();
 
             Console.WriteLine("Esfera 1:");
             Console.WriteLine($"Cor: ({sphere1.GetColor().Red}, {sphere1.GetColor().Green}, {sphere1.GetColor().Blue})");
