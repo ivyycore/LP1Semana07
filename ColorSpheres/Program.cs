@@ -81,7 +81,17 @@ namespace ColorSpheres
             Color blueColor = new Color(0, 0, 255);
             Color greenColor = new Color(0, 255, 0);
 
-            Sphere
+            Sphere sphere1 = new Sphere(redColor, 10);
+            Sphere sphere2 = new Sphere(blueColor, 15)
+            Sphere sphere3 = new Sphere(greenColor, 12);
+            
+            sphere1.Throw();
+            sphere1.Throw();
+            sphere1.Throw();
+
+            sphere2.Pop();
+
+            sphere2.Throw();
         }
     }
 }
