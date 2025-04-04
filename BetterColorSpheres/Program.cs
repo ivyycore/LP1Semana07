@@ -21,47 +21,34 @@
             //readonly 
              public byte Grey => (byte)((Red + Green + Blue) / 3);
         }
-
-        private class Sphere
+        public class Sphere
         {
-            private Color color;
-            private int radius;
-            private int throwTimes;
+            public Color Color { get; } 
+            public int Radius { get; private set; } 
+            private int ThrowTimes;
 
-            public Sphere(Color color, int radius)
+            //Propriedades 
+             public Sphere(Color color, int radius)
             {
-                this.color = color;
-                this.radius = radius;
-                this.throwTimes = 0;
-            }
-
-            public Color GetColor()
-            {
-                return color;
-            }
-
-            public int GetRadius()
-            {
-                return radius;
+                Color = color;
+                Radius = radius;
+                ThrowTimes = 0;
             }
 
             public void Pop()
             {
-                radius = 0;
+                Radius = 0;
             }
 
             public void Throw()
             {
-                if (radius > 0)
+                if (Radius > 0)
                 {
-                    throwTimes++;
+                    ThrowTimes++;
                 }
             }
 
-            public int GetTimesThrown()
-            {
-                return throwTimes;
-            }
+            public int GetTimesThrown() => ThrowTimes;
         }
         public static void Main()
         {
