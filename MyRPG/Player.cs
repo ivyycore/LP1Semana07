@@ -12,7 +12,7 @@ namespace MyRPG
 
         public class Name
         {
-            private readonly string name;
+            public string name { get; }
 
             public Name(string name)
             {
@@ -33,12 +33,14 @@ namespace MyRPG
             }
         }
         public class Level
-        private readonly string level;
-
-        public Level(int level)
         {
-            this.level = 1 + XP / 1000;
-        }
+            private readonly string level;
+
+            public Level(int level)
+            {
+                this.level = 1 + XP / 1000;
+            }
+        } 
         public int Health
         {
             get
