@@ -83,6 +83,26 @@
             Console.WriteLine($"Cor: ({sphere2.GetColor().Red}, {sphere2.GetColor().Green}, {sphere2.GetColor().Blue})");
             Console.WriteLine($"Raio: {sphere2.GetRadius()}");
             Console.WriteLine($"Número de vezes que foi atirada: {sphere2.GetTimesThrown()}");
+
+            Console.WriteLine("Esfera 1:");
+            Console.WriteLine($"Cor: ({sphere1.Color.Red}, {sphere1.Color.Green}, {sphere1.Color.Blue})");
+            Console.WriteLine($"Raio: {sphere1.Radius}");
+            Console.WriteLine($"Número de vezes que foi atirada: {sphere1.GetTimesThrown()}");
+            Console.WriteLine($"Tom de Cinza: {sphere1.Color.Grey}");
+            Console.WriteLine();
+
+            Console.WriteLine("Esfera 2:");
+            Console.WriteLine($"Cor: ({sphere2.Color.Red}, {sphere2.Color.Green}, {sphere2.Color.Blue})");
+            Console.WriteLine($"Raio: {sphere2.Radius}");
+            Console.WriteLine($"Número de vezes que foi atirada: {sphere2.GetTimesThrown()}");
+            Console.WriteLine($"Tom de Cinza: {sphere2.Color.Grey}");
+            Console.WriteLine();
+
+            Console.WriteLine("Esfera 3:");
+            Console.WriteLine($"Cor: ({sphere3.Color.Red}, {sphere3.Color.Green}, {sphere3.Color.Blue})");
+            Console.WriteLine($"Raio: {sphere3.Radius}");
+            Console.WriteLine($"Número de vezes que foi atirada: {sphere3.GetTimesThrown()}");
+            Console.WriteLine($"Tom de Cinza: {sphere3.Color.Grey}");
         }
     }
 }
