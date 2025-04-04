@@ -31,10 +31,7 @@ namespace MyRPG
 
         class Level
         {
-            private int levels
-
-            public int level =>
-                levels + XP / 1000
+            public int Level => selected + XP / 1000
         } 
 
         public int Health
@@ -67,7 +64,7 @@ namespace MyRPG
         public class Start
         {
             public int xp { get; set; } = 0;
-            public Health = MaxHealth
+            public float health = MaxHealth
         }
     }
 }
